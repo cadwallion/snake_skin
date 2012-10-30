@@ -40,8 +40,11 @@ def help():
   print '\thelp - this info'
 
 if sys.argv[1] == 'shed':
-  library = sys.argv[2]
-  shed(library)
+  if len(sys.argv) > 2:
+    library = sys.argv[2]
+    shed(library)
+  else:
+    print 'Project name not specified'
 else:
   help()
 
