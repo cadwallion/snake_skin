@@ -42,7 +42,7 @@ setup(
   author_email = 'cadwallion@gmail.com',
   description = 'Python library skeleton tool',
   packages = get_packages(),
-  scripts = 'bin/snake_skin.py',
+  scripts = ['bin/snake_skin'],
   install_requires = requirements,
   classifiers = [
     'Programming Language :: Python',    
